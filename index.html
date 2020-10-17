@@ -11,6 +11,7 @@ code {
   color: crimson;
   padding: 2px;
   font-size: 15px;
+  white-space:nowrap;
 }
 
 p{
@@ -37,7 +38,7 @@ list-style-type:none;
 </head>
 <body>
 
-<h1>Java Basics -  Refer during leetcode </h1>
+<h1>Java Basics -  Refer during practice</h1>
 
 <p>DataTypes</p>
 <ul>
@@ -62,18 +63,18 @@ list-style-type:none;
 </div>
 <div class="container">
 <h3>ArrayList</h3>
-<code> ArrayList dataType ListName = new ArrayList dataType();</code>
+<code> ArrayList <> ListName = new ArrayList <>();</code>
 <p>Methods</p>
-<p><code>void add(int index, E element)</p></code>
+<p><code>void add(int index, E element)</code></p>
 <p><code>get(int index)</p></code>
 <p><code>contains(Object o)</p></code>
 <p><code>remove(int index)</p></code>
 </div>
 <div class="container">
 <h3>HashMap</h3>
-<code>HashMap dataType, dataType key = new HashMap dataType, dataType();</code>
+<code>HashMap <>, <> key = new HashMap <>, <>();</code>
 <p>Methods</p>
-<p><code>containsKey(key_element)</p></code>
+<p><code>containsKey(key_element)</code></p>
 <p><code>containsValue(key_element)</code></p>
 <p><code>put(Object key, Object value)</code></p>
 <p><code>int size()</code></p>
@@ -85,11 +86,69 @@ list-style-type:none;
 <h3>Stack</h3>
 <code>Stack<Integer> stack = new Stack<Integer>();</code>
 <p>Methods</p>
-<p><code>to return and remove a value from the top:</p></code>
-<p><code>String top = stack.pop();</p></code>
+<p>To add a value to the top of the stack:</p>
+<p><code>stack.push(1) OR stack.push("hello")</code> </p>
 
-<p><code>to return a value without removing it:</p></code>
-<p><code>String peek = stack.peek();</p><code>
+<p>To return and remove a value from the top:</p>
+<p><code>String top = stack.pop();</code></p></code>
+
+<p>To return a value without removing it:</p>
+<p><code>String peek = stack.peek();</code></p>
+<p>True if stack is empty</p>
+<p><code>stack.empty();</code></p>
+<p>Get size of stack</p>
+<code> int size = stack.size(); </code>
+
+</div>
+<div class="container">
+<h3>Queue</h3>
+<code>Queue<> q = new LinkedList<>();</code>
+<p>To add a value to the back of queue:</p>
+<code>queue.add(7);</code>
+
+<p>To remove and return front value:</p>
+<code>int next = queue.remove();</code>
+
+<p>To just return front value without removing:</p>
+<code>int peek = queue.peek();</code>
+<p>Get size of queue</p>
+<code> int size = q.size(); </code>
+
+</div>
+
+<div class="container">
+<h3>Tree Traversal</h3>
+<code>Inorder (Left, Root, Right)</code>
+<code>Preorder (Root, Left, Right)</code>
+<code>Postorder (Left, Right, Root)</code>
+<h4>BFS</h4>
+<code>
+function breadthFirstSearch (Start, Goal)<br>
+   { <br>
+       enqueue(Queue,Start)<br>
+       setVisited(start)<br>
+       while notEmpty(Queue)<br>
+       {<br>
+           Node := dequeue(Queue)<br>
+           if Node = Goal<br>
+           {<br>
+               return Node<br>
+           }<br>
+           for each Child in Expand(Node)<br>
+           {<br>
+               if notVisited(Child)<br>
+               {     <br>         
+                   setVisited(Child)<br>
+                   enqueue(Queue, Child)<br>
+               }<br>
+           }<br>
+       }<br>
+   }<br>
+
+
+
+
+</code>
 </div>
 </body>
 </html>
