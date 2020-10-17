@@ -18,6 +18,18 @@ p{
   color:black;
 }
 
+.container{
+ display: flex;
+ flex-direction:column;
+    align-items: center;
+    margin: 0 0 2rem;
+    padding: 1rem 2rem;
+    background: #fff;
+    min-width: 250px;
+    border-radius: .75rem;
+    box-shadow: 0 0.5rem 1.5rem #edf0f7;
+    border: 1px solid #edf0f7;
+}
 ul{
 list-style-type:none;
 }
@@ -36,13 +48,19 @@ list-style-type:none;
 <li><code>String myText = "Hello";</code>     // String</li>
 
 </ul>
-
+<div class="container">
 <h3>Array</h3>
-<code>dataType [] VarName = new dataType[arraySize];</code>
 
+<code>dataType [] VarName = new dataType[arraySize];</code>
+<p>Methods</p>
+<p><code>Array.length - get size of array<p></code>
+
+</div>
+<div class="container">
 <h3>2DArray</h3>
 <code>dataType[][] arr = new dataType[row][column];</code> 
-
+</div>
+<div class="container">
 <h3>ArrayList</h3>
 <code> ArrayList dataType ListName = new ArrayList dataType();</code>
 <p>Methods</p>
@@ -50,16 +68,28 @@ list-style-type:none;
 <p><code>get(int index)</p></code>
 <p><code>contains(Object o)</p></code>
 <p><code>remove(int index)</p></code>
-
+</div>
+<div class="container">
 <h3>HashMap</h3>
 <code>HashMap dataType, dataType key = new HashMap dataType, dataType();</code>
-
 <p>Methods</p>
-<p><code>containsValue(Object value)</code></p>
+<p><code>containsKey(key_element)</p></code>
+<p><code>containsValue(key_element)</code></p>
 <p><code>put(Object key, Object value)</code></p>
 <p><code>int size()</code></p>
 <p><code>get(Object key)</code></p>
 <p><code>remove(Object key)</code></p>
+</div>
 
+<div class="container">
+<h3>Stack</h3>
+<code>Stack<Integer> stack = new Stack<Integer>();</code>
+<p>Methods</p>
+<p><code>to return and remove a value from the top:</p></code>
+<p><code>String top = stack.pop();</p></code>
+
+<p><code>to return a value without removing it:</p></code>
+<p><code>String peek = stack.peek();</p><code>
+</div>
 </body>
 </html>
