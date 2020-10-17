@@ -11,7 +11,7 @@ code {
   color: crimson;
   padding: 2px;
   font-size: 15px;
-  white-space:nowrap;
+
 }
 
 p{
@@ -55,11 +55,38 @@ list-style-type:none;
 <code>dataType [] VarName = new dataType[arraySize];</code>
 <p>Methods</p>
 <p><code>Array.length - get size of array<p></code>
-
+<code>int[] array = {23, 43, 55, 12};<br>
+int[] copiedArray = array.clone();</code>
 </div>
+
+<div class="container">
+<h3>String</h3>
+<code>String txt = "Hello World";</code>
+<p>Methods</p>
+<p>The <b>indexOf()</b> method returns the index (the position) of the first occurrence of a specified text in a string (including whitespace):
+</p>
+<code>txt.indexOf("hello")</code>
+<p><b>concatenate</b> two strings:</p>
+<code>string1.concat(string2)</code>
+<p><b>charAt()</b>:- Returns the character at the specified index (position)</p>
+<code>txt.charAt(0); // H</code>
+<p>Checks whether a string contains a <b>sequence of characters</b></p>
+<code>txt.contains("Hel") // true</code>
+<p>The <b>length()</b> method returns the length of a specified string <b>including white spaces</b></p>
+<code>txt.length()</code>
+<p><b>substring</b> Extracts the characters from a string, beginning at a specified start position, and through the specified number of character
+<b>beginIndex is inclusive and endIndex is exclusive</b>
+</p>
+<code>String substring(int beginIndex, int endIndex)</code>
+</div>
+
+
 <div class="container">
 <h3>2DArray</h3>
 <code>dataType[][] arr = new dataType[row][column];</code> 
+
+
+
 </div>
 <div class="container">
 <h3>ArrayList</h3>
@@ -121,10 +148,10 @@ list-style-type:none;
 <code>Inorder (Left, Root, Right)</code>
 <code>Preorder (Root, Left, Right)</code>
 <code>Postorder (Left, Right, Root)</code>
-<h4>BFS</h4>
+<h4>BFS Algorithm</h4>
 <code>
 function breadthFirstSearch (Start, Goal)<br>
-   { <br>
+   {    <br>
        enqueue(Queue,Start)<br>
        setVisited(start)<br>
        while notEmpty(Queue)<br>
