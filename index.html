@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-body{
-text-align:center;
-}
-code {
-  font-family: Consolas,"courier new";
-  color: crimson;
-  padding: 2px;
-  font-size: 15px;
-
-}
-
-p{
-  font-size: 15px;
-  color:black;
-}
-
-.container{
- display: flex;
- flex-direction:column;
-    align-items: center;
-    margin: 0 0 2rem;
-    padding: 1rem 2rem;
-    background: #fff;
-    min-width: 250px;
-    border-radius: .75rem;
-    box-shadow: 0 0.5rem 1.5rem #edf0f7;
-    border: 1px solid #edf0f7;
-}
-ul{
-list-style-type:none;
-}
-</style>
+<title>Java with Data Structures</title>
+<meta charset="UTF-8">
+<meta name="description" content="Java and Data Structures">
+<meta name="keywords" content="Java Basics, Datastructure,Linear,Non-Linear,Searching,Sorting,Arrays,Stacks,Queues,LinkedList">
+<meta name="author" content="Kartik Desai">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/prism.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
+<header>
+<h1>Java Basics </h1>
+<a href="https://github.com/kaddy645" target="_blank">Created by Kartik</a>
+</header>
+<div class="container">
+<h3>DataTypes & Initialization</h3>
+<pre>
+        <code>
+boolean result = true;
+char capitalC = 'C';
+final int i = 100000;
+int j = 10.01;
+double d1 = 123.4;
+final double d2 = 12.3e-5;
+float f = 123.4f;
+        </code>
+    </pre>
+</div>
+<div class="container">
+<h3>Types of Data Structures</h3>
+<pre>
+<code>
+    Linear -  Array , Stack , Queue, Linkedlist
+    </code>
+    <code>
+    Non-Linear - Tree , Graph
+    </code>
+   
+    </pre>
+    <pre>
+ <p>Common design Algorithmic Paradigms:</p>
+  <code>
 
-<h1>Java Basics -  Refer during practice</h1>
-
-<p>DataTypes</p>
-<ul>
-<li><code>int myNum = 5; </code>              // Integer (whole number)</li>
-<li><code>float myFloatNum = 5.99f;</code>    // Floating point number</li>
-<li><code>char myLetter = 'D';</code>         // Character</li>
-<li><code>boolean myBool = true; </code>      // Boolean</li></li>
-<li><code>String myText = "Hello";</code>     // String</li>
-
-</ul>
+Divide and conquer : Recursively breaking down a problem 
+Dynamic programming : breaking it down into a collection of simpler subproblems. 
+Greedy algorithm : the problem solving heuristic of making the locally optimal choice at each stage. 
+Backtracking : is a general algorithm for finding all (or some) solutions 
+    </code>
+</pre>
+</div>
 <div class="container">
 <h3>Array</h3>
-
-<code>dataType [] VarName = new dataType[arraySize];</code>
+<code>dataType [] values = new dataType[arraySize];</code>
 <p>Methods</p>
-<p><code>Array.length - get size of array<p></code>
+<p>
+    <code>
+    Array.length - get size of array
+<p></code>
 <code>int[] array = {23, 43, 55, 12};<br>
 int[] copiedArray = array.clone();</code>
 </div>
-
 <div class="container">
 <h3>String</h3>
 <code>String txt = "Hello World";</code>
 <p>Methods</p>
-<p>The <b>indexOf()</b> method returns the index (the position) of the first occurrence of a specified text in a string (including whitespace):
+<p>The <b>indexOf()</b> method returns the index (the position) of the first occurrence of a specified text in a
+    string (including whitespace):
 </p>
 <code>txt.indexOf("hello")</code>
 <p><b>concatenate</b> two strings:</p>
@@ -74,28 +78,37 @@ int[] copiedArray = array.clone();</code>
 <code>txt.contains("Hel") // true</code>
 <p>The <b>length()</b> method returns the length of a specified string <b>including white spaces</b></p>
 <code>txt.length()</code>
-<p><b>substring</b> Extracts the characters from a string, beginning at a specified start position, and through the specified number of character
-<b>beginIndex is inclusive and endIndex is exclusive</b>
+<p><b>substring</b> Extracts the characters from a string, beginning at a specified start position, and through
+    the specified number of character
+    <b>beginIndex is inclusive and endIndex is exclusive</b>
 </p>
 <code>String substring(int beginIndex, int endIndex)</code>
 </div>
-
-
 <div class="container">
 <h3>2DArray</h3>
-<code>dataType[][] arr = new dataType[row][column];</code> 
-
-
-
+<code>dataType[][] arr = new dataType[row][column];</code>
+<pre>
+        <code>
+for(int i=0; i< values.length; i++) {
+    for(int j=0; j< values[i].length; j++) {
+                    System.out.print(values[i][j] + "\t");
+                }
+                System.out.println("");
+            }
+        </code>
+    </pre>
 </div>
 <div class="container">
 <h3>ArrayList</h3>
 <code> ArrayList <> ListName = new ArrayList <>();</code>
 <p>Methods</p>
 <p><code>void add(int index, E element)</code></p>
-<p><code>get(int index)</p></code>
-<p><code>contains(Object o)</p></code>
-<p><code>remove(int index)</p></code>
+<p><code>get(int index)</p>
+</code>
+<p><code>contains(Object o)</p>
+</code>
+<p><code>remove(int index)</p>
+</code>
 </div>
 <div class="container">
 <h3>HashMap</h3>
@@ -108,95 +121,798 @@ int[] copiedArray = array.clone();</code>
 <p><code>get(Object key)</code></p>
 <p><code>remove(Object key)</code></p>
 </div>
-
 <div class="container">
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/wjI1WNcIntg">
+    </iframe>
+
+    
+    
+  
 <h3>Stack</h3>
-<code>Stack<Integer> stack = new Stack<Integer>();</code>
+<code>
+    Stack
+    <Integer>
+    stack = new Stack
+    <Integer>
+    ();
+</code>
 <p>Methods</p>
 <p>To add a value to the top of the stack:</p>
 <p><code>stack.push(1) OR stack.push("hello")</code> </p>
-
 <p>To return and remove a value from the top:</p>
-<p><code>String top = stack.pop();</code></p></code>
-
+<p><code>String top = stack.pop();</code></p>
+</code>
 <p>To return a value without removing it:</p>
 <p><code>String peek = stack.peek();</code></p>
 <p>True if stack is empty</p>
 <p><code>stack.empty();</code></p>
 <p>Get size of stack</p>
 <code> int size = stack.size(); </code>
-
 </div>
 <div class="container">
 <h3>Queue</h3>
 <code>Queue<> q = new LinkedList<>();</code>
 <p>To add a value to the back of queue:</p>
 <code>queue.add(7);</code>
-
 <p>To remove and return front value:</p>
 <code>int next = queue.remove();</code>
-
 <p>To just return front value without removing:</p>
 <code>int peek = queue.peek();</code>
 <p>Get size of queue</p>
 <code> int size = q.size(); </code>
-
 </div>
-
 <div class="container">
+<pre>
+        <code>
+import java.util.LinkedList;
+LinkedList<Integer> myList = new LinkedList<Integer>();
+myList.add(0);
+myList.remove(0);//Remove at index 0
+myList.size();
+myList.get(0);//Return element at index 0
+        </code>
+    </pre>
+</div>
+<div class="container">
+<h3>Linear Search</h3>
+<pre>
+    <code>
+        // This function returns index of element x in arr[] 
+static int search(int arr[], int n, int x) 
+{ 
+    for (int i = 0; i < n; i++) { 
+        // Return the index of the element if the element 
+        // is found 
+        if (arr[i] == x) 
+            return i; 
+    } 
 
+    // return -1 if the element is not found 
+    return -1; 
+} 
 
-<code>Inorder (Left, Root, Right)</code>
-<code>Preorder (Root, Left, Right)</code>
-<code>Postorder (Left, Right, Root)</code>
-<h4>BFS Algorithm</h4>
+    </code>
+</pre>
+</div>
+<div class="container">
+<h3>Binary Search</h3>
+<pre>
+    <code>
+        int binarySearch(int arr[], int l, int r, int x) 
+        { 
+            if (r >= l) { 
+                int mid = l + (r - l) / 2; 
+    
+                // If the element is present at the 
+                // middle itself 
+                if (arr[mid] == x) 
+                    return mid; 
+    
+                // If element is smaller than mid, then 
+                // it can only be present in left subarray 
+                if (arr[mid] > x) 
+                    return binarySearch(arr, l, mid - 1, x); 
+    
+                // Else the element can only be present 
+                // in right subarray 
+                return binarySearch(arr, mid + 1, r, x); 
+            } 
+    
+            // We reach here when element is not present  
+            // in array 
+            return -1; 
+        } 
+    
+    </code>
+</pre>
+</div>
+<div class="container">
+<h3>Selection Sort</h3>
+<pre>
+    <code>
+        void selectionSort(int arr[]) 
+        { 
+            int n = arr.length; 
+    
+            // One by one move boundary of unsorted subarray 
+            for (int i = 0; i < n-1; i++) 
+            { 
+                // Find the minimum element in unsorted array 
+                int min_idx = i; 
+                for (int j = i+1; j < n; j++) 
+                    if (arr[j] < arr[min_idx]) 
+                        min_idx = j; 
+    
+                // Swap the found minimum element with the first 
+                // element 
+                int temp = arr[min_idx]; 
+                arr[min_idx] = arr[i]; 
+                arr[i] = temp; 
+            } 
+        } 
+    </code>
+</pre>
+</div>
+<div class="container">
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/OGzPmgsI-pQ">
+    </iframe>
+<h3>Insertion Sort</h3>
+<pre>
+    <code>
+        void insertionSort(int arr[]) 
+        { 
+            int n = arr.length; 
+            for (int i = 1; i < n; ++i) { 
+                int key = arr[i]; 
+                int j = i - 1; 
+    
+                /* Move elements of arr[0..i-1], that are 
+                greater than key, to one position ahead 
+                of their current position */
+                while (j >= 0 && arr[j] > key) { 
+                    arr[j + 1] = arr[j]; 
+                    j = j - 1; 
+                } 
+                arr[j + 1] = key; 
+            } 
+        } 
+    </code>
+</pre>
+</div>
+<div class="container">
+<h3>Quick Sort</h3>
+<pre>
+    <code>
+        /* This function takes last element as pivot, places  
+        the pivot element at its correct position in sorted  
+        array, and places all smaller (smaller than pivot)  
+        to left of pivot and all greater elements to right  
+        of pivot */
+        int partition (int arr[], int low, int high)  
+        {  
+            int pivot = arr[high]; // pivot  
+            int i = (low - 1); // Index of smaller element  
+        
+            for (int j = low; j <= high - 1; j++)  
+            {  
+                // If current element is smaller than the pivot  
+                if (arr[j] < pivot)  
+                {  
+                    i++; // increment index of smaller element  
+                    swap(&arr[i], &arr[j]);  
+                }  
+            }  
+            swap(&arr[i + 1], &arr[high]);  
+            return (i + 1);  
+        }  
+        
+        /* The main function that implements QuickSort  
+        arr[] --> Array to be sorted,  
+        low --> Starting index,  
+        high --> Ending index */
+        void quickSort(int arr[], int low, int high)  
+        {  
+            if (low < high)  
+            {  
+                /* pi is partitioning index, arr[p] is now  
+                at right place */
+                int pi = partition(arr, low, high);  
+        
+                // Separately sort elements before  
+                // partition and after partition  
+                quickSort(arr, low, pi - 1);  
+                quickSort(arr, pi + 1, high);  
+            }  
+        } 
+
+    <h4>Run Function =></h4>
+        int arr[] = {10, 7, 8, 9, 1, 5};  
+        int n = sizeof(arr) / sizeof(arr[0]);  
+        quickSort(arr, 0, n - 1); 
+    </code>
+</pre>
+</div>
+<div class="container">
+<h3>Merge Sort</h3>
+<pre>
+    <code>
+        // Merges two subarrays of arr[].
+// First subarray is arr[l..m]
+// Second subarray is arr[m+1..r]
+void merge(int arr[], int l, int m, int r)
+{
+int n1 = m - l + 1;
+int n2 = r - m;
+
+// Create temp arrays
+int L[n1], R[n2];
+
+// Copy data to temp arrays L[] and R[]
+for (int i = 0; i < n1; i++)
+    L[i] = arr[l + i];
+for (int j = 0; j < n2; j++)
+    R[j] = arr[m + 1 + j];
+
+// Merge the temp arrays back into arr[l..r]
+
+// Initial index of first subarray
+int i = 0;
+
+// Initial index of second subarray
+int j = 0;
+
+// Initial index of merged subarray
+int k = l;
+
+while (i < n1 && j < n2) {
+    if (L[i] <= R[j]) {
+        arr[k] = L[i];
+        i++;
+    }
+    else {
+        arr[k] = R[j];
+        j++;
+    }
+    k++;
+}
+
+// Copy the remaining elements of
+// L[], if there are any
+while (i < n1) {
+    arr[k] = L[i];
+    i++;
+    k++;
+}
+
+// Copy the remaining elements of
+// R[], if there are any
+while (j < n2) {
+    arr[k] = R[j];
+    j++;
+    k++;
+}
+}
+
+        // l is for left index and r is
+        // right index of the sub-array
+        // of arr to be sorted */
+        void mergeSort(int arr[], int l, int r)
+        {
+            if (l < r) {
+        
+                // Same as (l+r)/2, but avoids
+                // overflow for large l and h
+                int m = (l + r - l) / 2;
+        
+                // Sort first and second halves
+                mergeSort(arr, l, m);
+                mergeSort(arr, m + 1, r);
+        
+                merge(arr, l, m, r);
+            }
+        }
+        
+
+        <h4>
+            Run Function =>
+        </h4>
+        int arr[] = { 12, 11, 13, 5, 6, 7 };
+int arr_size = sizeof(arr) / sizeof(arr[0]);
+
+cout << "Given array is \n";
+printArray(arr, arr_size);
+
+mergeSort(arr, 0, arr_size - 1);
+    </code>
+</pre>
+</div>
+<div class="container">
+<h3>Linkedlist</h3>
+<pre>
+    <code>
+        import java.io.*; 
+
+        // Java program to implement 
+        // a Singly Linked List 
+        public class LinkedList { 
+        
+            Node head; // head of list 
+        
+            // Linked list Node. 
+            // This inner class is made static 
+            // so that main() can access it 
+            static class Node { 
+        
+                int data; 
+                Node next; 
+        
+                // Constructor 
+                Node(int d) 
+                { 
+                    data = d; 
+                    next = null; 
+                } 
+            } 
+        
+            // **************INSERTION************** 
+        
+            // Method to insert a new node 
+            public static LinkedList insert(LinkedList list, int data) 
+            { 
+                // Create a new node with given data 
+                Node new_node = new Node(data); 
+                new_node.next = null; 
+        
+                // If the Linked List is empty, 
+                // then make the new node as head 
+                if (list.head == null) { 
+                    list.head = new_node; 
+                } 
+                else { 
+                    // Else traverse till the last node 
+                    // and insert the new_node there 
+                    Node last = list.head; 
+                    while (last.next != null) { 
+                        last = last.next; 
+                    } 
+        
+                    // Insert the new_node at last node 
+                    last.next = new_node; 
+                } 
+        
+                // Return the list by head 
+                return list; 
+            } 
+        
+            // **************TRAVERSAL************** 
+        
+            // Method to print the LinkedList. 
+            public static void printList(LinkedList list) 
+            { 
+                Node currNode = list.head; 
+        
+                System.out.print("\nLinkedList: "); 
+        
+                // Traverse through the LinkedList 
+                while (currNode != null) { 
+                    // Print the data at current node 
+                    System.out.print(currNode.data + " "); 
+        
+                    // Go to next node 
+                    currNode = currNode.next; 
+                } 
+                System.out.println("\n"); 
+            } 
+        
+            // **************DELETION BY KEY************** 
+        
+            // Method to delete a node in the LinkedList by KEY 
+            public static LinkedList deleteByKey(LinkedList list, int key) 
+            { 
+                // Store head node 
+                Node currNode = list.head, prev = null; 
+        
+                // 
+                // CASE 1: 
+                // If head node itself holds the key to be deleted 
+        
+                if (currNode != null && currNode.data == key) { 
+                    list.head = currNode.next; // Changed head 
+        
+                    // Display the message 
+                    System.out.println(key + " found and deleted"); 
+        
+                    // Return the updated List 
+                    return list; 
+                } 
+        
+                // 
+                // CASE 2: 
+                // If the key is somewhere other than at head 
+                // 
+        
+                // Search for the key to be deleted, 
+                // keep track of the previous node 
+                // as it is needed to change currNode.next 
+                while (currNode != null && currNode.data != key) { 
+                    // If currNode does not hold key 
+                    // continue to next node 
+                    prev = currNode; 
+                    currNode = currNode.next; 
+                } 
+        
+                // If the key was present, it should be at currNode 
+                // Therefore the currNode shall not be null 
+                if (currNode != null) { 
+                    // Since the key is at currNode 
+                    // Unlink currNode from linked list 
+                    prev.next = currNode.next; 
+        
+                    // Display the message 
+                    System.out.println(key + " found and deleted"); 
+                } 
+        
+                // 
+                // CASE 3: The key is not present 
+                // 
+        
+                // If key was not present in linked list 
+                // currNode should be null 
+                if (currNode == null) { 
+                    // Display the message 
+                    System.out.println(key + " not found"); 
+                } 
+        
+                // return the List 
+                return list; 
+            } 
+        
+            // **************DELETION AT A POSITION************** 
+        
+            // Method to delete a node in the LinkedList by POSITION 
+            public static LinkedList deleteAtPosition(LinkedList list, int index) 
+            { 
+                // Store head node 
+                Node currNode = list.head, prev = null; 
+        
+                // 
+                // CASE 1: 
+                // If index is 0, then head node itself is to be deleted 
+        
+                if (index == 0 && currNode != null) { 
+                    list.head = currNode.next; // Changed head 
+        
+                    // Display the message 
+                    System.out.println(index + " position element deleted"); 
+        
+                    // Return the updated List 
+                    return list; 
+                } 
+        
+                // 
+                // CASE 2: 
+                // If the index is greater than 0 but less than the size of LinkedList 
+                // 
+                // The counter 
+                int counter = 0; 
+        
+                // Count for the index to be deleted, 
+                // keep track of the previous node 
+                // as it is needed to change currNode.next 
+                while (currNode != null) { 
+        
+                    if (counter == index) { 
+                        // Since the currNode is the required position 
+                        // Unlink currNode from linked list 
+                        prev.next = currNode.next; 
+        
+                        // Display the message 
+                        System.out.println(index + " position element deleted"); 
+                        break; 
+                    } 
+                    else { 
+                        // If current position is not the index 
+                        // continue to next node 
+                        prev = currNode; 
+                        currNode = currNode.next; 
+                        counter++; 
+                    } 
+                } 
+        
+                // If the position element was found, it should be at currNode 
+                // Therefore the currNode shall not be null 
+                // 
+                // CASE 3: The index is greater than the size of the LinkedList 
+                // 
+                // In this case, the currNode should be null 
+                if (currNode == null) { 
+                    // Display the message 
+                    System.out.println(index + " position element not found"); 
+                } 
+        
+                // return the List 
+                return list; 
+            } 
+        
+            // **************MAIN METHOD************** 
+        
+            // method to create a Singly linked list with n nodes 
+            public static void main(String[] args) 
+            { 
+                /* Start with the empty list. */
+                LinkedList list = new LinkedList(); 
+        
+                // 
+                // ******INSERTION****** 
+                // 
+        
+                // Insert the values 
+                list = insert(list, 1); 
+                list = insert(list, 2); 
+                list = insert(list, 3); 
+                list = insert(list, 4); 
+                list = insert(list, 5); 
+                list = insert(list, 6); 
+                list = insert(list, 7); 
+                list = insert(list, 8); 
+        
+                // Print the LinkedList 
+                printList(list); 
+        
+                // 
+                // ******DELETION BY KEY****** 
+                // 
+        
+                // Delete node with value 1 
+                // In this case the key is ***at head*** 
+                deleteByKey(list, 1); 
+        
+                // Print the LinkedList 
+                printList(list); 
+        
+                // Delete node with value 4 
+                // In this case the key is present ***in the middle*** 
+                deleteByKey(list, 4); 
+        
+                // Print the LinkedList 
+                printList(list); 
+        
+                // Delete node with value 10 
+                // In this case the key is ***not present*** 
+                deleteByKey(list, 10); 
+        
+                // Print the LinkedList 
+                printList(list); 
+        
+                // 
+                // ******DELETION AT POSITION****** 
+                // 
+        
+                // Delete node at position 0 
+                // In this case the key is ***at head*** 
+                deleteAtPosition(list, 0); 
+        
+                // Print the LinkedList 
+                printList(list); 
+        
+                // Delete node at position 2 
+                // In this case the key is present ***in the middle*** 
+                deleteAtPosition(list, 2); 
+        
+                // Print the LinkedList 
+                printList(list); 
+        
+                // Delete node at position 10 
+                // In this case the key is ***not present*** 
+                deleteAtPosition(list, 10); 
+        
+                // Print the LinkedList 
+                printList(list); 
+            } 
+        } 
+        
+    </code>
+</pre>
+</div>
+<div class="container">
+<h3>Tree</h3>
+<pre>
+            BluePrint of Tree 
+    <code>
+        class BinaryTree {
+            static class TreeNode {
+            String data;
+            TreeNode left, right;
+            
+            TreeNode(String value) {
+            this.data = value;
+            left = right = null;
+            }
+    </code>
+</pre>
+<pre>
+    Preorder (Root, Left, Right)
+    <code>
+        private void preOrder(TreeNode node) {
+            if (node == null) {
+            return;
+            }
+            System.out.printf("%s ", node.data);
+            preOrder(node.left);
+            preOrder(node.right);
+        }
+    </code>
+</pre>
+<pre>
+    Inorder (Left, Root, Right)<br>
 <code>
-function breadthFirstSearch (Start, Goal)<br>
-   {    <br>
-       enqueue(Queue,Start)<br>
-       setVisited(start)<br>
-       while notEmpty(Queue)<br>
-       {<br>
-           Node := dequeue(Queue)<br>
-           if Node = Goal<br>
-           {<br>
-               return Node<br>
-           }<br>
-           for each Child in Expand(Node)<br>
-           {<br>
-               if notVisited(Child)<br>
-               {     <br>         
-                   setVisited(Child)<br>
-                   enqueue(Queue, Child)<br>
-               }<br>
-           }<br>
-       }<br>
-   }<br>
+    private void inOrder(TreeNode node) {
+        if (node == null) {
+        return;
+        }
+    
+        inOrder(node.left);
+        System.out.printf("%s ", node.data);
+        inOrder(node.right);
+    }
+    </code>
+
+
+</pre>
+<pre>
+    Postorder (Left, Right, Root)
+    <code>
+        private void postOrder(TreeNode node) {
+            if (node == null) {
+            return;
+            }
+        
+            postOrder(node.left);
+            postOrder(node.right);
+            System.out.printf("%s ", node.data);
+        }
+        
+    </code>
+</pre>
+</div>
+<div class="container">
+<h3>Trees</h3>
+
+<h4>BFS - Breadth First Search O ( V + E )</h4>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/QRq6p9s8NVg">
+</iframe>
 
 
 
+<pre>
+
+<code>
+public void BFS()
+{
+// BFS uses Queue data structure
+
+Queue q = new LinkedList();   
+
+for (i = 0; i < visited.length; i++)
+    visited[i] = false;        // Clear visited[]
+
+q.add(0);                     // Start the "to visit" at node 0
+
+/* ===========================================
+    Loop as long as there are "active" node
+    =========================================== */
+while( ! q.isEmpty() )
+{
+    int nextNode;                // Next node to visit
+    int i;
+
+    nextNode = q.remove();
+
+    if ( ! visited[nextNode] )
+    {
+        visited[nextNode] = true;    // Mark node as visited
+        System.out.println("nextNode = " + nextNode );
+
+        for ( i = 0; i < NNodes; i++ )
+            if ( adjMatrix[nextNode][i] > 0 && ! visited[i] )
+            q.add(i);
+    }
+}
+}
 
 </code>
-<h4>DFS</h4>
-<p>
- Algorithm<br>
 
- 1) Pick any node. <br>
- 2) If it is unvisited, mark it as visited and recur on all its <br>
-    adjacent nodes. <br>
- 3) Repeat until all the nodes are visited, or the node to be <br>
-    searched is found.
+</pre>
 
-<p>
+    <h4>DFS - Depth First Search O ( V + E )</h4>
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/iaBEKo5sM7w">
+    </iframe>
+    
+    <pre>
+        <code>
+            public class DepthFirstSearch {
+                List tree = new ArrayList();
+             
+                public static void main(String[] args) {
+                    Node nodeD = new Node("D", null, null);
+                    Node nodeE = new Node("E", null, null);
+                    Node nodeF = new Node("F", null, null);
+                    Node nodeB = new Node("B", nodeD, nodeE);
+                    Node nodeC = new Node("C", null, nodeF);
+                    Node root = new Node("A", nodeB, nodeC);
+             
+                    DepthFirstSearch.executeDFS(root);
+                }
+             
+                public static void executeDFS(Node root) {
+                    Stack nodeStack = new Stack();
+                    Node currentNode = root;
+                    System.out.println("==================== DFS traversal =====================");
+                    nodeStack.push(currentNode);
+                    while(!nodeStack.isEmpty()) {
+                        currentNode = nodeStack.pop();
+                        System.out.println("-- " + currentNode.getData() + "--");
+             
+                        if(currentNode.getLeft() == null && currentNode.getRight() == null) {
+                            continue;
+                        }
+                        else {
+                            if(currentNode.getRight() != null) {
+                                nodeStack.push(currentNode.getRight());
+                            }
+                            if(currentNode.getLeft() != null) {
+                                nodeStack.push(currentNode.getLeft());
+                            }
+                        }
+                    }
+                }
+            }
+             
+            class Node {
+                String data;
+                Node left;
+                Node right;
+             
+                public Node(String data, Node left, Node right) {
+                    this.data = data;
+                    this.left = left;
+                    this.right = right;
+                }
+             
+                public String getData() {
+                    return this.data;
+                }
+             
+                public Node getLeft() {
+                    return this.left;
+                }
+             
+                public Node getRight() {
+                    return this.right;
+                }
+            }
+        </code>
+    </pre>
 </div>
+
+
+
 <div>
 <h3>Time Complexity</h3>
-
-<img src="https://raw.githubusercontent.com/kaddy645/Jref.github.io/gh-pages/sortingScreenshot.png" alt="sorting alogorithm complexsity" >
-
-<img src="https://raw.githubusercontent.com/kaddy645/Jref.github.io/gh-pages/dataStructures.png" alt="sorting alogorithm complexsity" >
-
+<img src="https://raw.githubusercontent.com/kaddy645/Jref.github.io/gh-pages/sortingScreenshot.png"
+    alt="sorting alogorithm complexsity">
+<img src="https://raw.githubusercontent.com/kaddy645/Jref.github.io/gh-pages/dataStructures.png"
+    alt="sorting alogorithm complexsity">
 </div>
 </div>
+<script>
+const elements = document.querySelectorAll("code");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].classList.add("language-java");
+}
+
+</script>
+<script src="js/prism.js"></script>
 </body>
 </html>
+s

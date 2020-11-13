@@ -1,0 +1,31 @@
+html {
+  overflow-x: hidden;
+  width: fit-content;
+}
+body {
+  text-align: center;
+}
+p {
+  font-size: 15px;
+  color: black;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 2rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  min-width: 250px;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.5rem 1.5rem #edf0f7;
+  border: 1px solid #edf0f7;
+}
+ul {
+  list-style-type: none;
+}
