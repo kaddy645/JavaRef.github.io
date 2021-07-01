@@ -53,6 +53,10 @@ Backtracking : is a general algorithm for finding all (or some) solutions
 </div>
 <div class="container">
 <h3>Array</h3>
+<h4>the complexity for accessing, pushing or popping a value in an array is O(1)
+    <br>
+    Searching is O(n)
+</h4>
 <code>dataType [] values = new dataType[arraySize];</code>
 <p>Methods</p>
 <p>
@@ -100,6 +104,10 @@ for(int i=0; i< values.length; i++) {
 </div>
 <div class="container">
 <h3>ArrayList</h3>
+<h4>The size, isEmpty, get, set, iterator, and listIterator operations run in constant time
+    <br>
+    add is O(n)
+</h4>
 <code> ArrayList <> ListName = new ArrayList <>();</code>
 <p>Methods</p>
 <p><code>void add(int index, E element)</code></p>
@@ -112,7 +120,8 @@ for(int i=0; i< values.length; i++) {
 </div>
 <div class="container">
 <h3>HashMap</h3>
-<code>HashMap <>, <> key = new HashMap <>, <>();</code>
+<h4>HashMap has complexity of O(1) for insertion and lookup</h4>
+<code>HashMap <,> key = new HashMap <,>();</code>
 <p>Methods</p>
 <p><code>containsKey(key_element)</code></p>
 <p><code>containsValue(key_element)</code></p>
@@ -121,6 +130,65 @@ for(int i=0; i< values.length; i++) {
 <p><code>get(Object key)</code></p>
 <p><code>remove(Object key)</code></p>
 </div>
+
+<div class="container">
+    <h3>HashSet</h3>
+    <code>HashSet<> number = new HashSet<>();</code>
+    <p>Methods</p>
+    <p><code>add(key_element)</code></p>
+    <p><code>contains(key_element)</code></p>
+    <p><code>clear()</code></p>
+    <p><code>size()</code></p>
+    <p><code>isEmpty()</code></p>
+    <p><code>remove(Object key)</code></p>
+    <pre>
+        <code>
+            Iterator<String> itr=number.iterator();  <br>  
+                while(itr.hasNext()){    <br>  
+                   System.out.println(itr.next());    <br>  
+                } 
+        </code>
+    </pre>
+    </div>
+    <div class="container">
+        <h3>TreeSet</h3>
+        <code>TreeSet<> tree=new TreeSet<>();</code>
+        <p>Methods</p>
+        <p><code>tree.add();</code></p>
+        <p><code>tree.clear();</code></p>
+        <p><code>tree.contains();</code></p>
+    <p><code>tree.floor();</code></p>
+    <p><code>tree.ceiling();</code></p>
+    </div>
+    <div class="container">
+        <h3>TreeMap</h3>
+        <code>TreeMap<> treemap=new TreeMap<>();</code>
+        <p>Methods</p>
+        <p><code> treemap.put(2, "two");</code></p>
+        <p><code>treemap.get(2)</code></p>
+        <p><code>containsKey(2)</code></p>
+        <p><code>containsValue("two")</code></p>
+
+        <pre>
+           <code>
+            Integer highestKey = map.lastKey();
+            Integer lowestKey = map.firstKey();
+           </code>
+         </pre>
+      <pre>
+          <code>
+            /* Display content using Iterator*/
+            Set set = tmap.entrySet();
+            Iterator iterator = set.iterator();
+            while(iterator.hasNext()) {
+               Map.Entry mentry = (Map.Entry)iterator.next();
+               System.out.print("key is: "+ mentry.getKey() + " & Value is: ");
+               System.out.println(mentry.getValue());
+            }
+          </code>
+      </pre>
+        </div>
+     
 <div class="container">
     <iframe width="420" height="345" src="https://www.youtube.com/embed/wjI1WNcIntg">
     </iframe>
